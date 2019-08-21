@@ -74,6 +74,6 @@ get_tags(){
   curl https://${registry}/v2/${repo}/$image/tags/list | jq '.tags' -c
 }
 
-#sync_with_tags etcd 2.0.12 2.0.13 # sync etcd:2.0.12 and etcd:2.0.13
+sync_with_tags etcd 2.0.13 # sync etcd:2.0.12 and etcd:2.0.13
 #sync_after_tag etcd 2.0.8 # sync tag after etcd:2.0.8
-sync_all_tags etcd hyperkube # sync all tags of etcd and hyperkube
+#sync_all_tags etcd hyperkube # sync all tags of etcd and hyperkube
